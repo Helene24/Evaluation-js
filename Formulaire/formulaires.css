@@ -1,0 +1,19 @@
+label {
+    color: blueviolet;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+body {
+    background: rgb(206, 172, 238);
+}
+
+legend {
+    color: brown;
+}
+
+.button {
+    background: cornflowerblue;
+}
