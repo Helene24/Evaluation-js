@@ -37,7 +37,6 @@ document.getElementById('bouton').addEventListener("click", function(event) {
         societyError.innerHTML = '';
     }
 
-
     let PersContactValue = PersContact.value;
     if (PersContact.validity.valueMissing) {
         event.preventDefault();
@@ -48,7 +47,6 @@ document.getElementById('bouton').addEventListener("click", function(event) {
     } else {
         PersContactError.innerHTML = ''
     }
-
 
     let CodePostValue = CodePost.value;
     if (CodePost.validity.valueMissing) {
@@ -84,31 +82,15 @@ document.getElementById('bouton').addEventListener("click", function(event) {
         MailError.innerHTML = ''
     }
 
-    let VilleValue = Ville.value;
-    if (filtreAlpNum.test(VilleValue)) {
-        console.log('caractère alphanumérique ville ok');
-    }
-    if (Ville.length == '') {
-        alert('entrez la ville svp');
-    }
 
-
-    let MailValue = Mail.value;
-    if (filtreMail.test(MailValue)) {
-        console.log('@ présent');
-    }
-    if (MailValue.chatAt != i) {
-        alert('l adresse doit comporter @')
-    }
-})
-
-//variable choixTableau = tableau vide
-let choiceArray = [];
-//Récupération de 'Element' et application de la fonction 
-//quand U change de choix
-selectElement.addEventListener('change', function() {
-    //fonction = ajouter (push) élèment ds tableau vide quand
-    //U fait changement
-    choiceArray.push(selectElement.value);
-    comment.value = (choiceArray);
+    //variable choixTableau = tableau vide
+    let choiceArray = [];
+    //Récupération de 'Element' et application de la fonction 
+    //quand U change de choix
+    selectElement.addEventListener('change', function() {
+        //fonction = ajouter (push) élèment ds tableau vide quand
+        //U fait changement
+        choiceArray.push(selectElement.value);
+        comment.value = (choiceArray);
+    })
 })
